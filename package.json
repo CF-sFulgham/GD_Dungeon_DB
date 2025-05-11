@@ -1,0 +1,25 @@
+{
+  "name": "graphql",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "build": "tsc --outDir dist --rootDir src",
+    "start": "node dist/app.js",
+    "watch": "node --watch dist/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "22.15.17",
+    "typescript": "5.8.3"
+  },
+  "dependencies": {
+    "@mikro-orm/cli": "6.4.15",
+    "@mikro-orm/core": "6.4.15",
+    "@mikro-orm/migrations": "6.4.15",
+    "@mikro-orm/postgresql": "6.4.15",
+    "pg": "8.15.6"
+  }
+}
