@@ -11,7 +11,7 @@
     figlet "^1.5.2"
     parent-require "^1.0.0"
 
-"@mikro-orm/cli@^6.4.15":
+"@mikro-orm/cli@6.4.15":
   version "6.4.15"
   resolved "https://registry.yarnpkg.com/@mikro-orm/cli/-/cli-6.4.15.tgz#f0c4becafcd12c0a014100d95ef9da093c8e2317"
   integrity sha512-w0AqJvclBoSihECEtxPD2JtuOzwkm2nBYQvnZexiTfO5BPgjP9xGbCEDEp8figQW1yWIVM93z9aqQ2M3cXsADg==
@@ -23,7 +23,7 @@
     tsconfig-paths "4.2.0"
     yargs "17.7.2"
 
-"@mikro-orm/core@6.4.15", "@mikro-orm/core@^6.4.15":
+"@mikro-orm/core@6.4.15":
   version "6.4.15"
   resolved "https://registry.yarnpkg.com/@mikro-orm/core/-/core-6.4.15.tgz#86348e3394cdfc999e02a88679c55de82e10abf5"
   integrity sha512-1uQ7lThYymUHf6k6soByJ0qmnYFZcfpczAdmGsfIkGwoE0Ix83RIea+UAJk4pSFeKgXYdiDZOAFu5t224P/lOw==
@@ -45,7 +45,7 @@
     knex "3.1.0"
     sqlstring "2.3.3"
 
-"@mikro-orm/migrations@^6.4.15":
+"@mikro-orm/migrations@6.4.15":
   version "6.4.15"
   resolved "https://registry.yarnpkg.com/@mikro-orm/migrations/-/migrations-6.4.15.tgz#fb1e16bec466725c018263119d3480128eab50ad"
   integrity sha512-EzQjqq/VsoWzx12va+3rP/lF0PNEprsEKCSIADHRgr7srWpxXC2lna6KrUvip/AWpvn7gYlEJYZtltrL5M3wDg==
@@ -54,7 +54,7 @@
     fs-extra "11.3.0"
     umzug "3.8.2"
 
-"@mikro-orm/postgresql@^6.4.15":
+"@mikro-orm/postgresql@6.4.15":
   version "6.4.15"
   resolved "https://registry.yarnpkg.com/@mikro-orm/postgresql/-/postgresql-6.4.15.tgz#1dfcec9928e7f7d689c4d2a8f787e08f1fa315f0"
   integrity sha512-3h/78szM4jTZF2XGIsTumuHQI7KAR6/ZQK2MQ/qvbgOPHDJPXY1pfR7p7K9aXAQCRDgyj8/JXWREi0Ifi7d3QQ==
@@ -251,7 +251,7 @@ dir-glob@^3.0.1:
   dependencies:
     path-type "^4.0.0"
 
-dotenv@16.5.0:
+dotenv@16.5.0, dotenv@^16.5.0:
   version "16.5.0"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.5.0.tgz#092b49f25f808f020050051d1ff258e404c78692"
   integrity sha512-m/C+AwOAr9/W1UOIZUo232ejMNnJAJtYQjUbHoNTBNTJSvqzzDh7vnrei3o3r3m9blf6ZoDkvcw0VmozNRFJxg==
@@ -570,7 +570,7 @@ pg-types@^2.1.0:
     postgres-date "~1.0.4"
     postgres-interval "^1.1.0"
 
-pg@8.15.6, pg@^8.15.6:
+pg@8.15.6:
   version "8.15.6"
   resolved "https://registry.yarnpkg.com/pg/-/pg-8.15.6.tgz#2a28e98fb6cab18b886ce58b2c184d712a94880a"
   integrity sha512-yvao7YI3GdmmrslNVsZgx9PfntfWrnXwtR+K/DjI0I/sTKif4Z623um+sjVZ1hk5670B+ODjvHDAckKdjmPTsg==
@@ -830,6 +830,11 @@ uri-js@^4.4.1:
   integrity sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==
   dependencies:
     punycode "^2.1.0"
+
+uuid@^11.1.0:
+  version "11.1.0"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-11.1.0.tgz#9549028be1753bb934fc96e2bca09bb4105ae912"
+  integrity sha512-0/A9rDy9P7cJ+8w1c9WD9V//9Wj15Ce2MPz8Ri6032usz+NfePxx5AcN3bN+r6ZL6jEo066/yNYB3tn4pQEx+A==
 
 wrap-ansi@^7.0.0:
   version "7.0.0"
