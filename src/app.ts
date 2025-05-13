@@ -9,7 +9,7 @@ import {
 } from "./constants";
 import { User, Reward } from "./entities/entities";
 
-const main = async () => {
+(async () => {
     const orm = await MikroORM.init({
         entities: [ User, Reward ], // path to your entities directory
         driver: PostgreSqlDriver,
@@ -36,9 +36,7 @@ const main = async () => {
     
     await orm.em.persistAndFlush(UserTbl);
     
-}
-
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
+})().catch((err) => {
+    console.error(err);
+    process.exit(1);
 });
