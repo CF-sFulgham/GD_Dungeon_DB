@@ -1,27 +1,14 @@
 import { MikroORM }  from "@mikro-orm/core";
-import { PostgreSqlDriver } from "@mikro-orm/postgresql";
-import { 
-    __prod__ ,
-    POSTGRES_USER,
-    POSTGRES_PASSWORD,
-    POSTGRES_DB,
-    POSTGRES_HOST,
-} from "./constants";
+import mikroOrmConfig from "./mikro-orm.config";
 import { User, Reward } from "./entities/entities";
 
 (async () => {
-    const orm = await MikroORM.init({
-        entities: [ User, Reward ], // path to your entities directory
-        driver: PostgreSqlDriver,
-        dbName: POSTGRES_DB,
-        user: POSTGRES_USER,
-        password: POSTGRES_PASSWORD,
-        clientUrl: POSTGRES_HOST,
-        debug: !__prod__,
-    });
+    const orm = await MikroORM.init(mikroOrmConfig);
+    await orm.getMigrator().down();
+    await orm.getMigrator().up();
 
     const RewardTbl = orm.em.create(Reward, {
-        title: 1,
+        title: "Test Reward",
         createdAt: new Date(),
     });
 

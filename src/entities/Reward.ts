@@ -7,7 +7,7 @@ export class Reward {
     id!: number;
 
     @Property()
-    title!: number;
+    title!: string;
 
     @Property({ onCreate: () => new Date() })
     createdAt: Date;
