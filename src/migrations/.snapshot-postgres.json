@@ -17,12 +17,13 @@
         },
         "title": {
           "name": "title",
-          "type": "int",
+          "type": "varchar(255)",
           "unsigned": false,
           "autoincrement": false,
           "primary": false,
           "nullable": false,
-          "mappedType": "integer"
+          "length": 255,
+          "mappedType": "string"
         },
         "created_at": {
           "name": "created_at",
