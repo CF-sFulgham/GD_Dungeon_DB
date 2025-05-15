@@ -5,7 +5,7 @@ import {
     POSTGRES_DB, 
     POSTGRES_USER, 
     POSTGRES_PASSWORD, 
-    POSTGRES_DATABASE, 
+    POSTGRES_URL, 
     __prod__ 
 } from "./constants";
 import { User, Reward } from "./entities/entities";
@@ -23,6 +23,6 @@ export default {
     dbName: POSTGRES_DB,
     user: POSTGRES_USER,
     password: POSTGRES_PASSWORD,
-    clientUrl: POSTGRES_DATABASE,
+    clientUrl: POSTGRES_URL,
     debug: !__prod__,
 }

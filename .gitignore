@@ -2,8 +2,9 @@
 node_modules/
 
 # Ignore environment variable files
-.env
-.env.local
+# I nornally do not include .env files in the repository
+# .env
+# .env.local
 
 # Ignore log files
 *.log
@@ -20,7 +21,8 @@ Thumbs.db
 dist/
 
 # Ignore database files
-*.sql
+# I nornally do not include .sql files in the repository
+# *.sql
 
 # Ignore IDE specific files
 .idea/
